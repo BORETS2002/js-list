@@ -1,11 +1,14 @@
 let Elinput = document.querySelector(".form-control");
 let Ellist = document.querySelector(".list")
 let ElBtn = document.querySelector(".btn")
+let ElForm = document.querySelector(".form")
+
 
 let arr  =[]
 let son = 1 
 
-ElBtn.addEventListener("click", function ( ){
+ElForm.addEventListener("submit", function (evt){
+  evt.preventDefault()
   
   let obj = {
     text:Elinput.value
